@@ -1,0 +1,17 @@
+/* supports-version:16.3 */
+
+@import url(breeze/common.css);
+
+html {
+	--main-bg-color: #31363B;
+	--link-color: #297FB8;
+	--view-bg-color: #232629;
+	--text-color: #EFF0F1;
+	--border-color: #616569;
+	--selection-color: #224E65;
+	--scroll-container-color: #696D71;
+	--scroll-handle-color: #ABADB0;
+	--focus-color: #3EB0EB;
+	--negative-color: #da4453;
+	--tab-bg-color: #2D3136;
+}

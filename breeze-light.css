@@ -1,0 +1,37 @@
+/* supports-version:16.3 */
+
+@import url(breeze/common.css);
+
+html {
+	--main-bg-color: #EFF0F1;
+	--link-color: #297FB8;
+	--view-bg-color: #fcfcfc;
+	--text-color: #383C41;
+    --border-color: #C0C2C3;
+    --selection-color: #C2E0F5;
+	--scroll-container-color: #BFC0C2;
+	--scroll-handle-color: #787B7F;
+	--focus-color: #3daee9;
+	--negative-color: #da4453;
+}
+
+#ttrssMain img[src^='images'][src$='png'],
+#ttrssMain img[src^='plugins'][src$='png'],
+#ttrssPrefs img[src*='icons/information.png'],
+.claro .dijitSelect .dijitArrowButtonInner,
+.claro .dijitComboBox .dijitArrowButtonInner,
+.claro .dijitArrowButtonInner,
+.claro .dijitSelectHover .dijitArrowButton .dijitArrowButtonInner,
+.claro .dijitSelectFocused .dijitArrowButton .dijitArrowButtonInner,
+.claro .dijitComboBoxOpenOnClickHover .dijitArrowButtonInner,
+.claro .dijitComboBox .dijitDownArrowButtonHover .dijitArrowButtonInner,
+.claro .dijitTreeRow .dijitTreeExpando,
+.claro .dijitDialogCloseIcon,
+.dijitIconFolderOpen,
+.dijitFolderOpened,
+.dijitIconFolderClosed,
+.dijitFolderClosed
+ {
+	-webkit-filter: invert(1);
+	filter: invert(1);
+}
