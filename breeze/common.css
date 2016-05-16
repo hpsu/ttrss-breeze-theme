@@ -69,7 +69,7 @@
     right: -25px;
     top: 0px;
     z-index: 4;
-    padding: 7px;
+    padding: 11px 7px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 #floatingTitle .rchk,
@@ -263,7 +263,7 @@
     flex-direction: column;
     height: 100%;
 }*/
-/*#headlines-spacer{
+#headlines-spacer{
     box-sizing: border-box;
     height: 100%;
     moz-box-sizing: border-box;
@@ -279,7 +279,7 @@
     padding: 50px;
     position: absolute;
     right: -34px;
-}*/
+}
 /*#headlines-toolbar{
     margin: 0;
 }
@@ -356,9 +356,6 @@
     display: inline-block;
     margin-top: 10px;
 }
-#main-toolbar #headlines-toolbar{
-    width: 100%;
-}
 #main-toolbar > *{
     white-space: nowrap;
 }
@@ -400,7 +397,7 @@
 }
 #notify span.msg{
     flex: 1;
-    padding: 2px 5px;
+    padding: 0px 5px;
 }
 #notify.notify_error{
     background: var(--negative-color);
@@ -536,10 +533,14 @@
     border-color: var(--border-color);
     margin: 10px 0;
 }
-#userConfigTab, #labelConfigTab, #filterConfigTab, #pref-feeds-feeds, #instanceConfigTab{
+#userConfigTab,
+#labelConfigTab,
+#filterConfigTab,
+#pref-feeds-feeds,
+#instanceConfigTab{
     padding: 0px;
 }
-.actionChooser .button_nav,
+/*.actionChooser .button_nav,
 .actionChooser .button_nav:hover{
     background: transparent !important;
     border: none;
@@ -549,7 +550,7 @@
     padding: 0;
     position: relative;
     vertical-align: middle;
-}
+}*/
 .cdm{
     background-color: var(--view-bg-color);
 }
@@ -560,7 +561,7 @@
     font-size: 11px;
     font-weight: normal;
 }
-.cdm .cdmExcerpt:before,
+/*.cdm .cdmExcerpt:before,
 .hlContent .contentPreview:before{
     content: " ";
 }
@@ -572,7 +573,7 @@
 .cdm .title,
 .hlContent a{
     text-decoration: none;
-}
+}*/
 .cdm,
 .hl{
     position: relative;
@@ -675,19 +676,19 @@
     margin: -200px 0 0;
     padding: 210px 33px 10px;
 }
-.cdmContentInner .expandPrompt{
+/*.cdmContentInner .expandPrompt{
     font-weight: bold;
     padding: 5px 0 6px;
     width: 100%;
-}
-.cdmContentInner > .contentSizeWrapper{
+}*/
+/*.cdmContentInner > .contentSizeWrapper{
     border-bottom: 1px solid #ddd;
     height: 600px;
     height: auto;
     margin: 0 -10px;
     padding: 0 10px;
-}
-.cdmContentInner code,
+}*/
+/*.cdmContentInner code,
 .postContent code{
     background: rgba(0,0,0,.0333);
     border: 1px solid rgba(0,0,0,.0333);
@@ -701,12 +702,12 @@
     font-style: italic;
     line-height: 16px;
     margin: 1em 0;
-}
-.cdmContentInner h1,
+}*/
+/*.cdmContentInner h1,
 .postContent h1{
     font: normal normal bold 22px/28px "Noto Sans";
-}
-.cdmContentInner h1,
+}*/
+/*.cdmContentInner h1,
 .postContent h1,
 .cdmContentInner h2,
 .postContent h2,
@@ -747,11 +748,12 @@
 .postContent hr{
     border: none;
     border-top: 1px solid #ddd;
-}
-.cdmContentInner iframe,
+}*/
+/*.cdmContentInner iframe,
 .postContent iframe{
     margin: .5em 0;
 }
+*/
 .cdmContentInner img,
 .postContent img{
     height: auto;
@@ -763,14 +765,14 @@
 .postContent p{
     max-width: 45em;
 }
-.cdmContentInner pre code,
+/*.cdmContentInner pre code,
 .postContent pre code{
     background: transparent;
     border: none;
     color: inherit;
     padding: 0;
-}
-.cdmContentInner pre,
+}*/
+/*.cdmContentInner pre,
 .postContent pre{
     background: rgba(0,0,0,.0333);
     border: 1px solid rgba(0,0,0,.0333);
@@ -786,8 +788,8 @@
 .postContent code{
     color: #222;
     font-family: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
-}
-.cdmContentInner q :first-child,
+}*/
+/*.cdmContentInner q :first-child,
 .postContent q :first-child,
 .cdmContentInner blockquote :first-child,
 .postContent blockquote :first-child{
@@ -808,7 +810,7 @@
     display: block;
     margin: 1em 0;
     padding: .31em 1em;
-}
+}*/
 .cdmContentInner table,
 .postContent table{
     border-collapse: collapse;
@@ -834,7 +836,7 @@
     font-size: 14px;
     line-height: 1.7;
 }
-.cdmFeedTitle{
+/*.cdmFeedTitle{
     background-color: var(--main-bg-color);
     color: var(--text-color);
     padding: 56px 0 28px;
@@ -864,7 +866,7 @@
 }
 .cdmFeedTitle:hover .catchup{
     opacity: 1;
-}
+}*/
 .cdmFooter{
     clear: both;
     padding: 0 33px 33px;
@@ -883,7 +885,7 @@
 .cdmHeader img:hover{
     opacity: 1;
 }
-.cdmHeader img:not(.tinyFeedIcon){
+.cdmHeader img{
     opacity: 0.5;
 }
 .claro .cdmIntermediate{
