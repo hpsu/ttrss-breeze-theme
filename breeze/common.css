@@ -387,7 +387,7 @@
 }
 #notify img[src$='images/alert.png'],
 #notify img[src$='images/information.png'],
-#ttrssPrefs img[src$='images/information.png']{
+.ttrssPrefs img[src$='images/information.png']{
     background: transparent url("icons.svg#info") 0 0 no-repeat;
     cursor: pointer;
 }
@@ -435,7 +435,7 @@
     padding: 12px 44px 0 27px;
     z-index: 3;
 }
-#ttrssMain .tinyFeedIcon,
+.ttrssMain .tinyFeedIcon,
 #floatingTitle > :first-child > *,
 #floatingTitle > .scoreWrap img,
 .cdm.expanded .cdmHeader > :first-child > *,
@@ -453,83 +453,83 @@
     display: inline-block;
     vertical-align: middle;
 }
-#ttrssMain img[src$='images/archive.png']{
+body img[src$='images/archive.png']{
     background: transparent url("icons.svg#archive") 0 0 no-repeat;
 }
-#ttrssMain img[src$='images/fresh.png']{
+body img[src$='images/fresh.png']{
     background: transparent url("icons.svg#fresh") 0 0 no-repeat;
 }
-#ttrssMain img[src$='images/mark_set.png'],
-#ttrssMain img[src$='images/star.png']{
+body img[src$='images/mark_set.png'],
+body img[src$='images/star.png']{
     background: transparent url("icons.svg#star-filled") 0 0 no-repeat;
 }
-#ttrssMain img[src$='images/mark_unset.png']{
+body img[src$='images/mark_unset.png']{
     background: transparent url("icons.svg#star") 0 0 no-repeat;
 }
-#ttrssMain img[src$='images/new_version.png']{
+body img[src$='images/new_version.png']{
     background: transparent url("icons.svg#update") 0 0 no-repeat;
 }
-#ttrssMain img[src$='images/page_white_go.png']{
+body img[src$='images/page_white_go.png']{
     background: transparent url("icons.svg#jump") 0 0 no-repeat;
     cursor: pointer;
 }
-#ttrssMain img[src$='images/pub_set.png'],
-#ttrssMain img[src$='images/pub_unset.png'],
-#ttrssMain img[src$='images/feed.png']{
+body img[src$='images/pub_set.png'],
+body img[src$='images/pub_unset.png'],
+body img[src$='images/feed.png']{
     background: transparent url("icons.svg#feed") 0 0 no-repeat;
 }
-#ttrssMain img[src$='images/recently_read.png'],
-#ttrssMain img[src$='images/time.png']{
+body img[src$='images/recently_read.png'],
+body img[src$='images/time.png']{
     background: transparent url("icons.svg#history") 0 0 no-repeat;
 }
-#ttrssMain img[src$='images/score_half_high.png']{
+body img[src$='images/score_half_high.png']{
     background: transparent url("icons.svg#score-3") 0 0 no-repeat;
 }
-#ttrssMain img[src$='images/score_half_low.png']{
+body img[src$='images/score_half_low.png']{
     background: transparent url("icons.svg#score-1") 0 0 no-repeat;
 }
-#ttrssMain img[src$='images/score_high.png']{
+body img[src$='images/score_high.png']{
     background: transparent url("icons.svg#score-4") 0 0 no-repeat;
 }
-#ttrssMain img[src$='images/score_low.png']{
+body img[src$='images/score_low.png']{
     background: transparent url("icons.svg#score-0") 0 0 no-repeat;
 }
-#ttrssMain img[src$='images/score_neutral.png']{
+body img[src$='images/score_neutral.png']{
     background: transparent url("icons.svg#score-2") 0 0 no-repeat;
 }
-#ttrssMain img[src$='images/tag.png']{
+body img[src$='images/tag.png']{
     vertical-align: middle;
 }
-#ttrssMain img[src$='images/tag.png'],
-#ttrssMain img[src$='images/folder.png']{
+body img[src$='images/tag.png'],
+body img[src$='images/folder.png']{
     background: url("icons.svg#tag");
 }
-#ttrssMain img[src$='plugins/note/note.png']{
+body img[src$='plugins/note/note.png']{
     background: transparent url("icons.svg#note") 0 0 no-repeat;
     cursor: pointer;
 }
-#ttrssPrefs #header{
+.ttrssPrefs #header{
     position: absolute;
     right: 0;
     top: 0;
     z-index: 1;
 }
-#ttrssPrefs #header a{
+.ttrssPrefs #header a{
     background-image: url("icons.svg#close");
     display: block;
     font-size: 0;
     height: 16px;
     width: 16px;
 }
-#ttrssPrefs #pref-tabs{
+.ttrssPrefs #pref-tabs{
     padding: 10px;
 }
-#ttrssPrefs .feedParam,
-#ttrssPrefs .labelParam{
+.ttrssPrefs .feedParam,
+.ttrssPrefs .labelParam{
     float: right;
     margin-right: 1em;
 }
-#ttrssPrefs hr{
+.ttrssPrefs hr{
     border-color: var(--border-color);
     margin: 10px 0;
 }
@@ -1546,4 +1546,15 @@ ul.selfUpdateList, ul.userFeedList{
     margin: 0px 0px 5px 0px;
     overflow: auto;
     padding: 5px;
+}
+
+body.ttrss_main,
+body.ttrss_prefs,
+#main {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  padding: 0;
+  margin: 0;
 }

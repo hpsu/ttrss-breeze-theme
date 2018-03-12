@@ -15,9 +15,9 @@ html {
 	--negative-color: #da4453;
 }
 
-#ttrssMain img[src^='images'][src$='png'],
-#ttrssMain img[src^='plugins'][src$='png'],
-#ttrssPrefs img[src*='icons/information.png'],
+.ttrssMain img[src^='images'][src$='png'],
+.ttrssMain img[src^='plugins'][src$='png'],
+.ttrssPrefs img[src*='icons/information.png'],
 .claro .dijitSelect .dijitArrowButtonInner,
 .claro .dijitComboBox .dijitArrowButtonInner,
 .claro .dijitArrowButtonInner,
