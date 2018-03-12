@@ -992,6 +992,14 @@ body img[src$='plugins/note/note.png']{
 .claro .dijitMenuItem{
     color: var(--text-color);
 }
+.claro .dijitMenu .dijitMenuItem td {
+    border-width: 0;
+    padding: 4px;
+}
+.claro .dijitMenu .dijitMenuItemSelected td {
+    background: transparent;
+    color: var(--text-color);
+}
 .claro .dijitMenuItemDisabled .dijitMenuItemLabel{
     border-bottom: 1px solid var(--border-color);
 }
